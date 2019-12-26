@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  create-instance-az:
+    build: .
+    container_name: az-instance
+    ports:
+      - "5432:5432"
+    environment:
+      - AZURE_CLI_DISABLE_CONNECTION_VERIFICATION=1
+      - resourcegroup=NomeProjeto
+      - vmname=NomeMaquinaVirtual
+      - user=xxxxxx@hotmail.com.br
+      - password=xxxxxxxxx
+    command:
+      - /init_script.sh
