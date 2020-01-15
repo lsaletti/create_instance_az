@@ -75,3 +75,6 @@ Senha do usuário/conta na Azure.
 Essas informações são essenciais para realizar qualquer tipo de ação no container.  
 
 ----------
+
+
+Obs: Essa solução foi criada para facilitar a comunicação via "az cli", caso não consiga instalar essa ferramenta localmente.
